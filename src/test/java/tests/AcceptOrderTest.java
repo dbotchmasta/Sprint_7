@@ -1,8 +1,10 @@
 package tests;
 
 import io.restassured.response.Response;
+import jdk.jfr.Description;
 import model.Courier;
 import model.Order;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import steps.OrderSteps;
 import utils.OrderGenerator;
@@ -15,6 +17,8 @@ public class AcceptOrderTest extends BaseTest {
     private final OrderSteps orderSteps = new OrderSteps();
 
     @Test
+    @DisplayName("Принятие заказа с валидными данными")
+    @Description("Проверка принятия заказа с валидными данными")
     public void acceptOrderSuccess() {
         Courier courier = new Courier(RandomData.getRandomLogin(), RandomData.getRandomPassword(), RandomData.getRandomName());
         createAndLoginCourier(courier);

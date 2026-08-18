@@ -1,6 +1,8 @@
 package tests;
 
+import jdk.jfr.Description;
 import model.Order;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -26,6 +28,8 @@ public class OrderCreateTest {
 
     @ParameterizedTest(name = "Создание заказа с цветом: {0}")
     @MethodSource("orders")
+    @DisplayName("Создание заказа")
+    @Description("Проверка создания заказа с различными вариантами цветов")
     public void createOrderWithDifferentColors(String colorName, Order order) {
 
         orderSteps.createOrder(order)
