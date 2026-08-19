@@ -1,6 +1,6 @@
 package tests;
 
-import jdk.jfr.Description;
+import io.qameta.allure.Description;
 import model.Courier;
 import model.CourierCredentials;
 import org.junit.jupiter.api.DisplayName;

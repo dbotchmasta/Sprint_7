@@ -1,7 +1,7 @@
 package tests;
 
 import io.restassured.response.Response;
-import jdk.jfr.Description;
+import io.qameta.allure.Description;
 import model.Courier;
 import model.Order;
 import org.junit.jupiter.api.DisplayName;

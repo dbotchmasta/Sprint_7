@@ -1,6 +1,6 @@
 package tests;
 
-import jdk.jfr.Description;
+import io.qameta.allure.Description;
 import model.Order;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
